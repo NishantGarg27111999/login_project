@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraRoz</title>
+    
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Garg's </h1>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li> <a href="#">ABOUT</a> </li>
+            <li> <a href="#">SERVICE</a> </li>
+            <li> <a href="#">DESIGN</a> </li>
+            <li> <a href="#">CONTACT</a> </li>
+
+        </ul>
+        <!-- <input type="text" placeholder="Type to Search">
+        <button id="search">Search</button> -->
+    </nav>
+
+    <section class="content">
+        <div id="description">
+            <h2>Web Design and <br> <span>Development</span> <br> Course
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vero dolorum, aliquid temporibus ea velit ipsa minima blanditiis rem sequi.
+            </p>
+        </div>
+        
+        <div id="formsection">
+        <form action="/login" id="login" method="post">
+            <div id="loginHere"> Login Here</div>
+            <input type="text" name="userName" placeholder="Enter your name">
+            <input type="email" name="email" placeholder="Enter Email Here">
+            <input type="password" name="password" placeholder="Enter Password Here">
+            <!-- <a href="/login"> <button type="submit">Login</button> Login </a> -->
+            <button type="submit" id="loginbtn"> Login</button>
+            <div>
+                Don't have an account? <br> <span id="signup_toggle" onclick="displacelogin()"> Sign up</span>  here
+            </div>
+            <div id="liw">Login with</div>
+            <div class="icon">
+               <a href="https://facebook.com"> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=" https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://google.com"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="https://skype.com"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+        </form>
+        <form action="/signup" id="signup" method="post">
+            <div id="signupHere"> Signup Here</div>
+            <input type="text" name="userName" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter Email Here" required>
+            <input type="password" name="password" placeholder="Enter Password Here" required>
+            <!-- <a href="/login"> <button type="submit">Login</button> Login </a> -->
+            <button type="submit" id="signupbtn"> Signup</button>
+            <div>
+                Already have an account? <br><span id="login_toggle" onclick="displaceSignUp()"> Login </span> here
+            </div>
+            <div id="liw">Signup with</div>
+            <div class="icon">
+               <a href="https://facebook.com"> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=" https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://google.com"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="https://skype.com"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+        </form>
+    </div>
+   
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="js/login.js"></script>
+</body>
+</html>
