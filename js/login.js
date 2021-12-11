@@ -1,11 +1,11 @@
 let signup = document.getElementById("signup")
 let login = document.getElementById("login");
-if (window.innerWidth < 550) {
+if (window.innerWidth < 500) {
     function displacelogin() {
         login.style.transform = "translateY(-440px)"
         login.style.opacity = "0";
         
-        signup.style.transform = "translateY(350px)"
+        signup.style.transform = "translateY(250px)"
         signup.style.opacity = "1";
 
 
