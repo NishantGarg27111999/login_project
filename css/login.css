@@ -6,6 +6,7 @@
 }
 
 body{
+    padding: 8px;
     background-blend-mode: multiply;
     background-image:  url('images/98365.jpg'),linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
     background-repeat: no-repeat;
@@ -16,9 +17,7 @@ body{
     width: 100vw;
     /* overflow:inherit; */
 }
-#formsection{
 
-}
 
 #navbar{
     display: flex;
@@ -190,6 +189,9 @@ span{
 } */
 
 @media only screen and (max-width: 1050px){
+    body{
+        height: auto;
+    }
     #navbar h1{
        
         margin-left: 20px;
@@ -222,7 +224,7 @@ span{
         }
         .content #description {
             display: block;
-            padding: 20px;
+            padding: 35px;
             width:70%;
             
         }
@@ -247,8 +249,19 @@ span{
 
     }
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 415px){
         .content #description{
-            margin: 20px;
+            margin: 15px;
+            padding: 10px;
         }
+        .content #description{
+            font-size: 1rem;
+        }
+        #navbar ul li{
+            padding: 8px;
+        }
+        #description h2{
+            font-size: 25px;
+        }
+        
     }

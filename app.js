@@ -5,10 +5,15 @@ const bodyparser=require("body-parser");
 // const { copyFileSync } = require("fs");
 
 const port=process.env.PORT||5000;
-
+const DB='mongodb+srv://nishant:55555@cluster0.sy5zvkb.mongodb.net/?retryWrites=true&w=majority'
 const app=express();
 
-mongoose.connect("mongodb://localhost:27017/loginData").then(()=>{   //create a database if not exists
+// mongoose.connect("mongodb://localhost:27017/loginData").then(()=>{   //create a database if not exists
+//     console.log("connection successfull...");
+// }).catch((err)=>{
+//     console.log(err);
+// });
+mongoose.connect(DB).then(()=>{   //create a database if not exists
     console.log("connection successfull...");
 }).catch((err)=>{
     console.log(err);
